@@ -1,0 +1,102 @@
+.skills {
+    position: relative;
+    padding-top: 81px;
+    margin-bottom: 273px;
+
+    &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: 0;
+        height: 75%;
+        width: 50%;
+        background: url("../../img/background/Рюкзак.png") left bottom / contain no-repeat;
+    }
+}
+
+.skills__title {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 41px;
+    margin-bottom: 39px;
+    display: flex;
+    justify-content: center;
+}
+
+.skills__text {
+    display: flex;
+    font-weight: 600;
+    margin-bottom: 93px;
+    line-height: 30px;
+    width: 79%;
+    padding-left: 22%;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills__category {
+    display: flex;
+    flex-direction: column;
+    padding-left: 30%;
+}
+
+.skills-row {
+    display: flex;
+
+    &__item {
+        margin-right: 12px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+
+.skills__item {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 33px;
+    margin-bottom: 40px;
+
+    span {
+        display: block;
+        margin-bottom: 25px;
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.skill {
+    position: relative;
+    width: 166px;
+    height: 166px;
+
+    &__title {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 25px;
+        color: rgba(70, 78, 98, 0.5);
+    }
+}
+
+.skill-circle {
+    stroke-dasharray: 251;
+    fill: transparent;
+
+    &--under {
+        stroke: #eaeaea;
+        stroke-width: 5px;
+    }
+
+    &--above {
+        stroke-width: 12px;
+        stroke-dashoffset: 200px;
+    }
+}

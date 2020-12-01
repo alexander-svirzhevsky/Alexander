@@ -1,0 +1,73 @@
+.section-welcome {
+    background: url('../../img/background/hero.jpg') center top / cover no-repeat;
+}
+
+.container__hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 175px;
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+
+    span {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 30px;
+        margin-right: 34px;
+        color: rgba(70, 78, 98, 0.5);
+    }
+
+    &__user {
+        font-weight: 800;
+        font-size: 72px;
+        line-height: 60px;
+        color: #464E62;
+    }
+}
+
+.scroll {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+
+    span {
+        margin-right: 15px;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 30px;
+    }
+}
+
+.scroll__icon {
+    width: 14px;
+    height: 14px;
+    position: relative;
+    top: -12px;
+
+    animation-name: scroll;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 1s;
+}
+
+@keyframes scroll {
+    0% {
+        top: -12px;
+    }
+
+    50% {
+        top: 0px;
+    }
+
+    100% {
+        top: 17px;
+    }
+}

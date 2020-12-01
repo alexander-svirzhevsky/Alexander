@@ -1,0 +1,122 @@
+.section-reviews {
+    background: url("../../img/background/Budda.jpg") top right 70% no-repeat;
+}
+
+.slider__header {
+    padding-top: 226px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 78px;
+}
+
+.slider__controls {
+    padding-right: 40%;
+}
+
+.button-slider {
+    width: 53px;
+    height: 53px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 2px solid #464E62;
+    outline: none;
+    margin-right: 28px;
+    cursor: pointer;
+    fill: #464E62;
+    transition: .3s all;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    &:hover {
+        border-color: #5500F2
+    }
+}
+
+.slider-btn {
+    width: 100%;
+    height: 100%;
+}
+
+.slider__list {
+    padding-bottom: 194px;
+}
+
+.reviews__list {
+    display: flex;
+}
+
+.reviews__desc {
+    padding-left: 20%;
+    min-height: 226px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.reviews__item {
+    flex: 1;
+    position: relative;
+
+    &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        background: url("../../img/quote/quote.png") center center / contain no-repeat;
+        fill: red;
+        top: 0;
+        left: 0;
+        width: 77px;
+        height: 77px;
+    }
+}
+
+.reviews__text {
+    font-weight: 600;
+    line-height: 30px;
+    color: rgba(70, 78, 98, 0.8);
+    display: block;
+    width: 72%;
+    margin-bottom: 10px;
+}
+
+.reviews__user {
+    display: flex;
+
+    &-img {
+        width: 75px;
+        height: 75px;
+        border-radius: 50%;
+        background-position: top 10% center;
+        background-repeat: no-repeat;
+        margin-right: 31px;
+
+        &--1 {
+            background-image: url("../../img/quote/1.png");
+        }
+
+        &--2 {
+            background-image: url("../../img/quote/2.png");
+            background-position: top center;
+        }
+    }
+
+    &-desc {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        span {
+            font-weight: 600;
+            line-height: 22px;
+            color: rgba(70, 78, 98, 0.5);
+        }
+    }
+}
+
+.user-name {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+}
