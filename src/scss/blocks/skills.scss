@@ -1,7 +1,23 @@
+.container-skills {
+    @include tablets() {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+}
+
 .skills {
     position: relative;
-    padding-top: 81px;
-    margin-bottom: 273px;
+    padding-top: rem(81px);
+    margin-bottom: rem(273px);
+
+    @include tablets() {
+        margin-bottom: rem(89px);
+    }
+
 
     &::before {
         content: "";
@@ -9,59 +25,93 @@
         position: absolute;
         bottom: 0;
         height: 75%;
-        width: 50%;
+        width: 45%;
         background: url("../../img/background/Рюкзак.png") left bottom / contain no-repeat;
+
+        @include tablets() {
+            display: none;
+        }
+    }
+}
+
+.bag {
+    display: none;
+    width: 50%;
+    height: 80%;
+
+    @include tablets() {
+        display: block;
     }
 }
 
 .skills__title {
     font-weight: bold;
-    font-size: 30px;
-    line-height: 41px;
-    margin-bottom: 39px;
+    font-size: rem(30px);
+    line-height: rem(41px);
+    margin-bottom: rem(39px);
     display: flex;
     justify-content: center;
+
+    @include tablets() {
+        margin-bottom: rem(28px);
+    }
 }
 
 .skills__text {
     display: flex;
     font-weight: 600;
-    margin-bottom: 93px;
-    line-height: 30px;
+    margin-bottom: rem(93px);
+    line-height: rem(30px);
     width: 79%;
     padding-left: 22%;
     justify-content: center;
     align-items: center;
+
+    @include tablets() {
+        padding-left: 0;
+        width: 66%;
+        margin-bottom: rem(50px);
+    }
 }
 
 .skills__category {
     display: flex;
     flex-direction: column;
     padding-left: 30%;
+
+    @include tablets() {
+        padding-left: 0;
+        margin-bottom: rem(100px);
+    }
 }
 
 .skills-row {
     display: flex;
+    flex-wrap: wrap;
 
     &__item {
-        margin-right: 12px;
+        margin-right: rem(12px);
 
         &:last-child {
             margin-right: 0;
         }
+    }
+
+    @include tablets() {
+        justify-content: center;
     }
 }
 
 
 .skills__item {
     font-weight: bold;
-    font-size: 24px;
-    line-height: 33px;
-    margin-bottom: 40px;
+    font-size: rem(24px);
+    line-height: rem(33px);
+    margin-bottom: rem(40px);
 
     span {
         display: block;
-        margin-bottom: 25px;
+        margin-bottom: rem(25px);
     }
 
     &:last-child {
@@ -71,8 +121,8 @@
 
 .skill {
     position: relative;
-    width: 166px;
-    height: 166px;
+    width: rem(166px);
+    height: rem(166px);
 
     &__title {
         position: absolute;
@@ -80,8 +130,8 @@
         left: 50%;
         transform: translate(-50%, -50%);
         font-weight: bold;
-        font-size: 18px;
-        line-height: 25px;
+        font-size: rem(18px);
+        line-height: rem(25px);
         color: rgba(70, 78, 98, 0.5);
     }
 }
@@ -92,11 +142,11 @@
 
     &--under {
         stroke: #eaeaea;
-        stroke-width: 5px;
+        stroke-width: rem(5px);
     }
 
     &--above {
-        stroke-width: 12px;
-        stroke-dashoffset: 200px;
+        stroke-width: rem(12px);
+        stroke-dashoffset: rem(200px);
     }
 }

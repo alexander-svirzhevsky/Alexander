@@ -1,63 +1,101 @@
+.container-works {
+    @include tablets() {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 .works__content {
     display: flex;
     justify-content: space-between;
     position: relative;
-    padding-bottom: 64px;
+    padding-bottom: rem(64px);
+
+    @include tablets() {
+        flex-direction: column;
+        align-items: center;
+    }
 
     &::before {
         content: attr(data-slide);
         position: absolute;
         top: -5%;
         line-height: 1;
-        font-size: 400px;
+        font-size: rem(400px);
         right: 0;
         font-weight: 800;
         color: #E6E6E6;
         transform: translateX(-137%);
+
+        @include tablets() {
+            right: -70%;
+            top: 0;
+        }
     }
 }
 
 .works__desc {
-    max-width: 333px;
+    max-width: rem(333px);
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     z-index: 1000;
+    padding-left: 20px;
+
+    @include tablets() {
+        padding-left: 0;
+        align-items: center;
+        text-align: center;
+        max-width: rem(410px);
+    }
 }
 
 .tags {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 35px;
+    margin-bottom: rem(35px);
 
     &__item {
         font-weight: 600;
-        font-size: 15px;
-        line-height: 20px;
+        font-size: rem(15px);
+        line-height: rem(20px);
         color: rgba(51, 60, 73, 0.8);
-        padding: 14px 22px;
+        padding: rem(14px) rem(22px);
         background: #F3F6F9;
-        border-radius: 40px;
-        margin-right: 8px;
+        border-radius: rem(40px);
+        margin-right: rem(8px);
 
         &:last-child {
             margin-right: 0;
         }
     }
+
+    @include tablets() {
+        margin-bottom: rem(21px);
+    }
 }
 
 .works__tittle {
     font-weight: bold;
-    font-size: 30px;
-    line-height: 41px;
-    margin-bottom: 35px;
+    font-size: rem(30px);
+    line-height: rem(41px);
+    margin-bottom: rem(35px);
+
+    @include tablets() {
+        margin-bottom: rem(21px);
+    }
 }
 
 .works__text {
     font-weight: 600;
     color: rgba(51, 60, 73, 0.8);
-    margin-bottom: 46px;
+    margin-bottom: rem(46px);
+
+    @include tablets() {
+        margin-bottom: rem(29px);
+    }
 }
 
 .more {
@@ -73,16 +111,16 @@
     }
 
     &__icon {
-        width: 22px;
-        height: 22px;
-        margin-right: 16px;
+        width: rem(22px);
+        height: rem(22px);
+        margin-right: rem(16px);
 
 
     }
 
     &__text {
         font-weight: bold;
-        font-size: 18px;
-        line-height: 25px;
+        font-size: rem(18px);
+        line-height: rem(25px);
     }
 }

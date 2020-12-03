@@ -1,19 +1,25 @@
 .section-tittle {
     font-weight: bold;
-    font-size: 36px;
-    line-height: 49px;
+    font-size: rem(36px);
+    line-height: rem(49px);
 }
 
 .works__preview {
     position: relative;
-    width: 637px;
-    height: 360px;
+    // width: rem(637px);// height: rem(360px);
+
+    @include tablets() {
+        margin-bottom: rem(56px);
+        // max-width: rem(637px);// max-height: rem(360px);
+    }
 }
 
 .works__preview-img {
     object-fit: cover;
     width: 100%;
     height: 100%;
+    width: rem(637px);
+    height: rem(360px);
 }
 
 .works__list {
@@ -26,8 +32,8 @@
 }
 
 .works__item {
-    width: 116px;
-    height: 65px;
+    width: rem(116px);
+    height: rem(65px);
 }
 
 .works__link {
@@ -41,7 +47,7 @@
     }
 
     &:hover {
-        border: 2px solid #DC9322;
+        border: rem(2px) solid #DC9322;
         transform: scale(1.05);
     }
 }
@@ -55,8 +61,8 @@
 
 .button-works {
     outline: none;
-    width: 35px;
-    height: 35px;
+    width: rem(35px);
+    height: rem(35px);
     background-color: #333C49;
     fill: #464E62;
     appearance: none;
@@ -74,8 +80,8 @@
 }
 
 .btn-icon {
-    width: 12px;
-    height: 12px;
+    width: rem(12px);
+    height: rem(12px);
 
     &--prev {
         transform: rotate(180deg);

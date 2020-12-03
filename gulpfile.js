@@ -27,7 +27,7 @@ const imagemin = require('gulp-imagemin');
 
 const paths = {
   src: './src/',              // paths.src
-  build: './build/'           // paths.build
+  build: './docs/'           // paths.build
 };
 
 function styles() {

@@ -13,7 +13,7 @@
     }
 }
 
-// @include tablets() { .... }
+// @include tablets() {}
 
 
 @mixin phones {
@@ -23,10 +23,3 @@
 }
 
 // @include phones() { .... }
-
-// @include tablets() {
-//     .container {
-//         max-width: 720px;
-//     }
-
-// }

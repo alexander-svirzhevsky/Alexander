@@ -2,11 +2,11 @@ html {
     font-size: $baseFontSize;
 
     @include tablets() {
-        font-size: $baseFontSize - 1px;
+        font-size: $baseFontSize - 2px;
     }
 
     @include phones() {
-        font-size: $baseFontSize - 2px;
+        font-size: $baseFontSize - 3px;
     }
 }
 
@@ -28,15 +28,15 @@ body {
 .wrapper {
     position: relative;
     width: 100%;
-    min-width: $containerWidth + 150px;
+    // min-width: $containerWidth + 150px;
     min-height: rem(650px);
     overflow: hidden;
 }
 
 .container {
-    // width: 95%;
-    // max-width: $containerWidth;
-    width: $containerWidth;
+    width: 95%;
+    max-width: $containerWidth;
+    // width: $containerWidth;
     margin: 0 auto;
 }
 

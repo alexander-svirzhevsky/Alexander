@@ -3,24 +3,25 @@
 }
 
 .slider__header {
-    padding-top: 226px;
+    padding-top: rem(226px);
     display: flex;
     justify-content: space-between;
-    margin-bottom: 78px;
+    margin-bottom: rem(78px);
 }
 
 .slider__controls {
-    padding-right: 40%;
+    padding-right: 20%;
+    display: flex;
 }
 
 .button-slider {
-    width: 53px;
-    height: 53px;
+    width: rem(53px);
+    height: rem(53px);
     background-color: transparent;
     border-radius: 50%;
-    border: 2px solid #464E62;
+    border: rem(2px) solid #464E62;
     outline: none;
-    margin-right: 28px;
+    margin-right: rem(28px);
     cursor: pointer;
     fill: #464E62;
     transition: .3s all;
@@ -40,7 +41,7 @@
 }
 
 .slider__list {
-    padding-bottom: 194px;
+    padding-bottom: rem(194px);
 }
 
 .reviews__list {
@@ -48,8 +49,8 @@
 }
 
 .reviews__desc {
-    padding-left: 20%;
-    min-height: 226px;
+    padding-left: 18%;
+    min-height: rem(226px);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -67,18 +68,18 @@
         fill: red;
         top: 0;
         left: 0;
-        width: 77px;
-        height: 77px;
+        width: 13%;
+        height: 21%;
     }
 }
 
 .reviews__text {
     font-weight: 600;
-    line-height: 30px;
+    line-height: rem(30px);
     color: rgba(70, 78, 98, 0.8);
     display: block;
-    width: 72%;
-    margin-bottom: 10px;
+    max-width: rem(330px);
+    margin-bottom: rem(10px);
 }
 
 .reviews__user {
@@ -90,7 +91,7 @@
         border-radius: 50%;
         background-position: top 10% center;
         background-repeat: no-repeat;
-        margin-right: 31px;
+        margin-right: rem(31px);
 
         &--1 {
             background-image: url("../../img/quote/1.png");
@@ -109,7 +110,7 @@
 
         span {
             font-weight: 600;
-            line-height: 22px;
+            line-height: rem(22px);
             color: rgba(70, 78, 98, 0.5);
         }
     }
@@ -117,6 +118,6 @@
 
 .user-name {
     font-weight: bold;
-    font-size: 18px;
-    line-height: 25px;
+    font-size: rem(18px);
+    line-height: rem(25px);
 }

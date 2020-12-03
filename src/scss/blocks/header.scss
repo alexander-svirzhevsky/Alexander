@@ -2,28 +2,98 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 54px;
+    // margin-top: rem(54px);
+    // position: fixed;
+    // width: 100%;
+    // top: 0;
+    // left: 0;
+    // z-index: 9999;
+    // transition: .3s linear;
+}
+
+.header-scroll {
+    background-color: #252830;
+}
+
+.container-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 40px;
+    width: 100%;
 }
 
 .header__user {
     font-weight: 800;
-    font-size: 36px;
-    line-height: 49px;
+    font-size: rem(36px);
+    line-height: rem(49px);
+    transition: .3s all;
+
+    &:hover {
+        color: #5500F2;
+    }
 }
+
+
+.navigation {
+
+    @include tablets() {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 45vw;
+        height: 100%;
+        background-color: #252830;
+        color: #fff;
+        z-index: 9000;
+        transform: translateX(100%);
+        transition: .5s all;
+        font-size: rem(19px);
+
+        &--active {
+            transform: translateX(0%);
+        }
+    }
+}
+
 
 .navigation__list {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @include tablets() {
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 235px 10px 10px 51px;
+        // align-items: flex-start;
+    }
 }
 
 .navigation__item {
-    margin-right: 60px;
+    margin-right: rem(60px);
     font-weight: 600;
     transition: .3s all;
+    z-index: 10000;
 
     &:last-child {
         margin-right: 0;
+    }
+
+    @include tablets() {
+        margin-right: 0;
+        margin-bottom: 23px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
     }
 }
 
@@ -36,14 +106,22 @@
     }
 }
 
+.socials {
+    @include tablets() {
+        margin-left: 32%;
+        margin-right: 10%;
+    }
+}
+
 .socials__list {
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .socials__item {
-    margin-right: 35px;
+    margin-right: rem(35px);
 
     &:last-child {
         margin-right: 0;
@@ -51,8 +129,8 @@
 }
 
 .socials__link {
-    width: 25px;
-    height: 25px;
+    width: rem(25px);
+    height: rem(25px);
     display: block;
     fill: #464E62;
     transition: .3s all;

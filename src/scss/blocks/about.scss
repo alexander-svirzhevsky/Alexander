@@ -4,34 +4,50 @@
 }
 
 .about {
-    padding-bottom: 230px;
+    padding-bottom: rem(230px);
 }
 
 .about__user {
     width: 40%;
+
+    @include tablets() {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 37%;
+    }
 }
 
 .user-img {
-    margin-bottom: 72px;
-    padding-left: 65px;
+    margin-bottom: rem(72px);
+    padding-left: rem(65px);
+
+    @include tablets() {
+        padding-left: 0;
+    }
 }
 
 .user-img__style {
-    width: 200px;
-    height: 200px;
-    border-radius: 50px;
+    width: rem(200px);
+    height: rem(200px);
+    border-radius: rem(50px);
 }
 
 .user-icon {
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    box-shadow: 0px 1px 73px -10px #464E62;
+    box-shadow: rem(0px) rem(1px) rem(73px) rem(-10px) #464E62;
 }
 
 td {
-    padding-right: 89px;
-    padding-bottom: 12px;
+    padding-right: rem(89px);
+    padding-bottom: rem(12px);
+
+    @include tablets() {
+        padding-right: rem(37px);
+        padding-bottom: rem(11px);
+    }
 
     &:last-child {
         padding-right: 0;
@@ -45,40 +61,45 @@ td {
 
 .td-desc {
     font-weight: 600;
-    line-height: 30px;
+    line-height: rem(30px);
 }
 
 .about__data {
-    flex: 1;
+    width: 60%;
+    padding-left: rem(68px);
+
+    @include tablets() {
+        width: 63%;
+    }
 }
 
 .about__desc {
     color: rgba(70, 78, 98, 0.8);
-    margin-bottom: 21px;
-    line-height: 22px;
+    margin-bottom: rem(21px);
+    line-height: rem(22px);
 }
 
 .about__title {
     font-weight: bold;
-    font-size: 36px;
-    line-height: 49px;
-    margin-bottom: 16px;
+    font-size: rem(36px);
+    line-height: rem(49px);
+    margin-bottom: rem(16px);
 }
 
 .about__text {
     font-weight: 600;
-    line-height: 30px;
+    line-height: rem(30px);
     color: rgba(70, 78, 98, 0.8);
-    margin-bottom: 92px;
+    margin-bottom: rem(92px);
     position: relative;
 }
 
 .star {
-    width: 27px;
-    height: 51px;
+    width: rem(27px);
+    height: rem(51px);
     position: absolute;
     top: 0;
-    left: -50px;
+    left: rem(-50px);
 }
 
 .about__extra {
@@ -87,7 +108,7 @@ td {
 
     &-content {
         font-style: italic;
-        line-height: 30px;
+        line-height: rem(30px);
         color: rgba(70, 78, 98, 0.8);
     }
 }

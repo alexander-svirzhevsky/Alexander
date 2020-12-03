@@ -15,14 +15,14 @@
 }
 
 .section-main__triangles-top {
-    height: 100px;
+    height: rem(100px);
     position: absolute;
     bottom: 100%;
     width: 100%;
 }
 
 .section-main__triangles-bottom {
-    height: 100px;
+    height: rem(100px);
     position: absolute;
     top: 100%;
     width: 100%;
