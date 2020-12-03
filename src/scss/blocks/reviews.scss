@@ -1,5 +1,5 @@
 .section-reviews {
-    background: url("../../img/background/Budda.jpg") top right 70% no-repeat;
+    background: url("../img/background/Budda.jpg") top right 70% no-repeat;
 }
 
 .slider__header {
@@ -64,7 +64,7 @@
         content: '';
         display: block;
         position: absolute;
-        background: url("../../img/quote/quote.png") center center / contain no-repeat;
+        background: url("../img/quote/quote.png") center center / contain no-repeat;
         fill: red;
         top: 0;
         left: 0;
@@ -94,11 +94,11 @@
         margin-right: rem(31px);
 
         &--1 {
-            background-image: url("../../img/quote/1.png");
+            background-image: url("../img/quote/1.png");
         }
 
         &--2 {
-            background-image: url("../../img/quote/2.png");
+            background-image: url("../img/quote/2.png");
             background-position: top center;
         }
     }
