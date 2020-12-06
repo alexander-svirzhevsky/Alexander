@@ -9,6 +9,10 @@
 
 .container-footer {
     display: flex;
+
+    @include phones() {
+        flex-direction: column;
+    }
 }
 
 .footer__copyright {
@@ -30,6 +34,10 @@
         line-height: rem(30px);
         color: #FFFFFF;
         margin-bottom: rem(18px);
+
+        @include phones() {
+            margin-bottom: rem(9px);
+        }
     }
 
     &-text {
@@ -41,11 +49,21 @@
         width: 36%;
         margin-right: rem(14px);
     }
+
+    @include phones() {
+        width: 100%;
+        white-space: nowrap;
+        margin-bottom: rem(45px);
+    }
 }
 
 .footer__data {
     padding-top: rem(20px);
     width: 73%;
+
+    @include phones() {
+        width: 100%;
+    }
 }
 
 .footer__data-content {

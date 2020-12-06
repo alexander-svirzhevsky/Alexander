@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 
@@ -161,162 +162,173 @@
                         LoftSchool.
                         Чуть позже я освежу в нём свой контент. А пока посмотрите, как тут всё классно и красиво!
                     </div>
-                    <ul class="skills__category">
-                        <li class="skills__item">
-                            <span>Front-end</span>
-                            <ul class="skills-row">
-                                <li class="skills-row__item">
-                                    <div class="skill">
-                                        <svg viewBox="0 0 100 100">
-                                            <circle cx="50" cy="50" r="40" class="skill-circle skill-circle--under">
-                                            </circle>
-                                            <circle cx="50" cy="50" r="40" stroke="url(#gradient)"
-                                                class="skill-circle skill-circle--above" transform="rotate(180 50 50)">
-                                            </circle>
-                                            <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                                                <stop offset="0%" stop-color="#5500f2" />
-                                                <stop offset="95%" stop-color="#8f00ef" />
-                                            </linearGradient>
-                                        </svg>
-                                        <div class="skill__title">
-                                            HTML5
+                    <div class="skills_category-wrap">
+                        <ul class="skills__category">
+                            <li class="skills__item">
+                                <span>Front-end</span>
+                                <ul class="skills-row">
+                                    <li class="skills-row__item">
+                                        <div class="skill">
+                                            <svg viewBox="0 0 100 100">
+                                                <circle cx="50" cy="50" r="40" class="skill-circle skill-circle--under">
+                                                </circle>
+                                                <circle cx="50" cy="50" r="40" stroke="url(#gradient)"
+                                                    class="skill-circle skill-circle--above"
+                                                    transform="rotate(180 50 50)">
+                                                </circle>
+                                                <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                                    <stop offset="0%" stop-color="#5500f2" />
+                                                    <stop offset="95%" stop-color="#8f00ef" />
+                                                </linearGradient>
+                                            </svg>
+                                            <div class="skill__title">
+                                                HTML5
+                                            </div>
                                         </div>
-                                    </div>
-                                </li>
-                                <li class="skills-row__item">
-                                    <div class="skill">
-                                        <svg viewBox="0 0 100 100">
-                                            <circle cx="50" cy="50" r="40" class="skill-circle skill-circle--under">
-                                            </circle>
-                                            <circle cx="50" cy="50" r="40" stroke="url(#gradient)"
-                                                class="skill-circle skill-circle--above" transform="rotate(180 50 50)">
-                                            </circle>
-                                            <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                                                <stop offset="0%" stop-color="#5500f2" />
-                                                <stop offset="95%" stop-color="#8f00ef" />
-                                            </linearGradient>
-                                        </svg>
-                                        <div class="skill__title">
-                                            CSS3
+                                    </li>
+                                    <li class="skills-row__item">
+                                        <div class="skill">
+                                            <svg viewBox="0 0 100 100">
+                                                <circle cx="50" cy="50" r="40" class="skill-circle skill-circle--under">
+                                                </circle>
+                                                <circle cx="50" cy="50" r="40" stroke="url(#gradient)"
+                                                    class="skill-circle skill-circle--above"
+                                                    transform="rotate(180 50 50)">
+                                                </circle>
+                                                <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                                    <stop offset="0%" stop-color="#5500f2" />
+                                                    <stop offset="95%" stop-color="#8f00ef" />
+                                                </linearGradient>
+                                            </svg>
+                                            <div class="skill__title">
+                                                CSS3
+                                            </div>
                                         </div>
-                                    </div>
-                                </li>
-                                <li class="skills-row__item">
-                                    <div class="skill">
-                                        <svg viewBox="0 0 100 100">
-                                            <circle cx="50" cy="50" r="40" class="skill-circle skill-circle--under">
-                                            </circle>
-                                            <circle cx="50" cy="50" r="40" stroke="url(#gradient)"
-                                                class="skill-circle skill-circle--above" transform="rotate(180 50 50)">
-                                            </circle>
-                                            <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                                                <stop offset="0%" stop-color="#5500f2" />
-                                                <stop offset="95%" stop-color="#8f00ef" />
-                                            </linearGradient>
-                                        </svg>
-                                        <div class="skill__title">
-                                            JavaScript
+                                    </li>
+                                    <li class="skills-row__item">
+                                        <div class="skill">
+                                            <svg viewBox="0 0 100 100">
+                                                <circle cx="50" cy="50" r="40" class="skill-circle skill-circle--under">
+                                                </circle>
+                                                <circle cx="50" cy="50" r="40" stroke="url(#gradient)"
+                                                    class="skill-circle skill-circle--above"
+                                                    transform="rotate(180 50 50)">
+                                                </circle>
+                                                <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                                    <stop offset="0%" stop-color="#5500f2" />
+                                                    <stop offset="95%" stop-color="#8f00ef" />
+                                                </linearGradient>
+                                            </svg>
+                                            <div class="skill__title">
+                                                JavaScript
+                                            </div>
                                         </div>
-                                    </div>
-                                </li>
-                                <li class="skills-row__item">
-                                    <div class="skill">
-                                        <svg viewBox="0 0 100 100">
-                                            <circle cx="50" cy="50" r="40" class="skill-circle skill-circle--under">
-                                            </circle>
-                                            <circle cx="50" cy="50" r="40" stroke="url(#gradient)"
-                                                class="skill-circle skill-circle--above" transform="rotate(180 50 50)">
-                                            </circle>
-                                            <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                                                <stop offset="0%" stop-color="#5500f2" />
-                                                <stop offset="95%" stop-color="#8f00ef" />
-                                            </linearGradient>
-                                        </svg>
-                                        <div class="skill__title">
-                                            Jquery
+                                    </li>
+                                    <li class="skills-row__item">
+                                        <div class="skill">
+                                            <svg viewBox="0 0 100 100">
+                                                <circle cx="50" cy="50" r="40" class="skill-circle skill-circle--under">
+                                                </circle>
+                                                <circle cx="50" cy="50" r="40" stroke="url(#gradient)"
+                                                    class="skill-circle skill-circle--above"
+                                                    transform="rotate(180 50 50)">
+                                                </circle>
+                                                <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                                    <stop offset="0%" stop-color="#5500f2" />
+                                                    <stop offset="95%" stop-color="#8f00ef" />
+                                                </linearGradient>
+                                            </svg>
+                                            <div class="skill__title">
+                                                Jquery
+                                            </div>
                                         </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="skills__item"><span>Workflow</span>
-                            <ul class="skills-row">
-                                <li class="skills-row__item">
-                                    <div class="skill">
-                                        <svg viewBox="0 0 100 100">
-                                            <circle cx="50" cy="50" r="40" class="skill-circle skill-circle--under">
-                                            </circle>
-                                            <circle cx="50" cy="50" r="40" stroke="url(#gradient)"
-                                                class="skill-circle skill-circle--above" transform="rotate(180 50 50)">
-                                            </circle>
-                                            <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                                                <stop offset="0%" stop-color="#5500f2" />
-                                                <stop offset="95%" stop-color="#8f00ef" />
-                                            </linearGradient>
-                                        </svg>
-                                        <div class="skill__title">
-                                            Git
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="skills__item"><span>Workflow</span>
+                                <ul class="skills-row">
+                                    <li class="skills-row__item">
+                                        <div class="skill">
+                                            <svg viewBox="0 0 100 100">
+                                                <circle cx="50" cy="50" r="40" class="skill-circle skill-circle--under">
+                                                </circle>
+                                                <circle cx="50" cy="50" r="40" stroke="url(#gradient)"
+                                                    class="skill-circle skill-circle--above"
+                                                    transform="rotate(180 50 50)">
+                                                </circle>
+                                                <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                                    <stop offset="0%" stop-color="#5500f2" />
+                                                    <stop offset="95%" stop-color="#8f00ef" />
+                                                </linearGradient>
+                                            </svg>
+                                            <div class="skill__title">
+                                                Git
+                                            </div>
                                         </div>
-                                    </div>
-                                </li>
-                                <li class="skills-row__item">
-                                    <div class="skill">
-                                        <svg viewBox="0 0 100 100">
-                                            <circle cx="50" cy="50" r="40" class="skill-circle skill-circle--under">
-                                            </circle>
-                                            <circle cx="50" cy="50" r="40" stroke="url(#gradient)"
-                                                class="skill-circle skill-circle--above" transform="rotate(180 50 50)">
-                                            </circle>
-                                            <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                                                <stop offset="0%" stop-color="#5500f2" />
-                                                <stop offset="95%" stop-color="#8f00ef" />
-                                            </linearGradient>
-                                        </svg>
-                                        <div class="skill__title">
-                                            Terminal
+                                    </li>
+                                    <li class="skills-row__item">
+                                        <div class="skill">
+                                            <svg viewBox="0 0 100 100">
+                                                <circle cx="50" cy="50" r="40" class="skill-circle skill-circle--under">
+                                                </circle>
+                                                <circle cx="50" cy="50" r="40" stroke="url(#gradient)"
+                                                    class="skill-circle skill-circle--above"
+                                                    transform="rotate(180 50 50)">
+                                                </circle>
+                                                <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                                    <stop offset="0%" stop-color="#5500f2" />
+                                                    <stop offset="95%" stop-color="#8f00ef" />
+                                                </linearGradient>
+                                            </svg>
+                                            <div class="skill__title">
+                                                Terminal
+                                            </div>
                                         </div>
-                                    </div>
-                                </li>
-                                <li class="skills-row__item">
-                                    <div class="skill">
-                                        <svg viewBox="0 0 100 100">
-                                            <circle cx="50" cy="50" r="40" class="skill-circle skill-circle--under">
-                                            </circle>
-                                            <circle cx="50" cy="50" r="40" stroke="url(#gradient)"
-                                                class="skill-circle skill-circle--above" transform="rotate(180 50 50)">
-                                            </circle>
-                                            <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                                                <stop offset="0%" stop-color="#5500f2" />
-                                                <stop offset="95%" stop-color="#8f00ef" />
-                                            </linearGradient>
-                                        </svg>
-                                        <div class="skill__title">
-                                            Gulp
+                                    </li>
+                                    <li class="skills-row__item">
+                                        <div class="skill">
+                                            <svg viewBox="0 0 100 100">
+                                                <circle cx="50" cy="50" r="40" class="skill-circle skill-circle--under">
+                                                </circle>
+                                                <circle cx="50" cy="50" r="40" stroke="url(#gradient)"
+                                                    class="skill-circle skill-circle--above"
+                                                    transform="rotate(180 50 50)">
+                                                </circle>
+                                                <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                                    <stop offset="0%" stop-color="#5500f2" />
+                                                    <stop offset="95%" stop-color="#8f00ef" />
+                                                </linearGradient>
+                                            </svg>
+                                            <div class="skill__title">
+                                                Gulp
+                                            </div>
                                         </div>
-                                    </div>
-                                </li>
-                                <li class="skills-row__item">
-                                    <div class="skill">
-                                        <svg viewBox="0 0 100 100">
-                                            <circle cx="50" cy="50" r="40" class="skill-circle skill-circle--under">
-                                            </circle>
-                                            <circle cx="50" cy="50" r="40" stroke="url(#gradient)"
-                                                class="skill-circle skill-circle--above" transform="rotate(180 50 50)">
-                                            </circle>
-                                            <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                                                <stop offset="0%" stop-color="#5500f2" />
-                                                <stop offset="95%" stop-color="#8f00ef" />
-                                            </linearGradient>
-                                        </svg>
-                                        <div class="skill__title">
-                                            Webpack
+                                    </li>
+                                    <li class="skills-row__item">
+                                        <div class="skill">
+                                            <svg viewBox="0 0 100 100">
+                                                <circle cx="50" cy="50" r="40" class="skill-circle skill-circle--under">
+                                                </circle>
+                                                <circle cx="50" cy="50" r="40" stroke="url(#gradient)"
+                                                    class="skill-circle skill-circle--above"
+                                                    transform="rotate(180 50 50)">
+                                                </circle>
+                                                <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                                    <stop offset="0%" stop-color="#5500f2" />
+                                                    <stop offset="95%" stop-color="#8f00ef" />
+                                                </linearGradient>
+                                            </svg>
+                                            <div class="skill__title">
+                                                Webpack
+                                            </div>
                                         </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <img src="img/background/bag.png" alt="bag" class="bag">
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <img src="img/background/bag.png" alt="bag" class="bag">
+                    </div>
+
                 </div>
             </section>
             <setion class="works">
@@ -406,40 +418,123 @@
                             </button>
                         </div>
                     </div>
-                    <ul class="slider__list">
-                        <li class="slider__item">
-                            <ul class="reviews__list">
-                                <li class="reviews__item">
-                                    <div class="reviews__desc">
-                                        <p class="reviews__text">Этот парень проходил обучение веб-разработке не где-то,
-                                            а в
-                                            LoftSchool! 4,5
-                                            месяца только самых тяжелых испытаний и бессонных ночей!</p>
-                                        <div class="reviews__user">
-                                            <div class="reviews__user-img reviews__user-img--1"></div>
-                                            <div class="reviews__user-desc">
-                                                <div class="user-name">Ковальчук Дмитрий</div>
-                                                <span>Основатель Loftschool</span>
+                    <div class="swiper swiper-container">
+                        <ul class="slider__list swiper-wrapper">
+                            <li class="slider__item swiper-slide">
+                                <ul class="reviews__list">
+                                    <li class="reviews__item">
+                                        <div class="reviews__desc">
+                                            <p class="reviews__text">Этот парень проходил обучение веб-разработке не
+                                                где-то,
+                                                а в
+                                                LoftSchool! 4,5
+                                                месяца только самых тяжелых испытаний и бессонных ночей!</p>
+                                            <div class="reviews__user">
+                                                <div class="reviews__user-img reviews__user-img--1"></div>
+                                                <div class="reviews__user-desc">
+                                                    <div class="user-name">Ковальчук Дмитрий</div>
+                                                    <span>Основатель Loftschool</span>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </li>
-                                <li class="reviews__item">
-                                    <div class="reviews__desc">
-                                        <p class="reviews__text">Этот код выдержит любые испытания. Только пожалуйста,
-                                            не загружайте сайт на слишком старых браузерах</p>
-                                        <div class="reviews__user">
-                                            <div class="reviews__user-img reviews__user-img--2"></div>
-                                            <div class="reviews__user-desc">
-                                                <div class="user-name">Владимир Сабанцев</div>
-                                                <span>Преподаватель</span>
+                                    </li>
+                                    <li class="reviews__item">
+                                        <div class="reviews__desc">
+                                            <p class="reviews__text">Этот код выдержит любые испытания. Только
+                                                пожалуйста,
+                                                не загружайте сайт на слишком старых браузерах</p>
+                                            <div class="reviews__user">
+                                                <div class="reviews__user-img reviews__user-img--2"></div>
+                                                <div class="reviews__user-desc">
+                                                    <div class="user-name">Владимир Сабанцев</div>
+                                                    <span>Преподаватель</span>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="slider__item swiper-slide">
+                                <ul class="reviews__list">
+                                    <li class="reviews__item">
+                                        <div class="reviews__desc">
+                                            <p class="reviews__text">Этот парень проходил обучение веб-разработке не
+                                                где-то,
+
+                                                LoftSchool! 4,5
+                                                месяца только самых тяжелых испытаний и бессонных ночей!</p>
+                                            <div class="reviews__user">
+                                                <div class="reviews__user-img reviews__user-img--1"></div>
+                                                <div class="reviews__user-desc">
+                                                    <div class="user-name">Ковальчук Дмитрий</div>
+                                                    <span>Основатель Loftschool</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="reviews__item">
+                                        <div class="reviews__desc">
+                                            <p class="reviews__text">Этот код выдержит любые испытания. Только
+                                                пожалуйста,
+                                                не загружайте сайт на слишком старых браузерах</p>
+                                            <div class="reviews__user">
+                                                <div class="reviews__user-img reviews__user-img--2"></div>
+                                                <div class="reviews__user-desc">
+                                                    <div class="user-name">Владимир Сабанцев</div>
+                                                    <span>Преподаватель</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <!-- <div class="swiper-pagination"></div> -->
+                    </div>
+
+                    <div class="swiper-phones swiper-container">
+                        <ul class="slider__list swiper-wrapper slider__list--phones">
+                            <li class="slider__item swiper-slide">
+                                <ul class="reviews__list">
+                                    <li class="reviews__item">
+                                        <div class="reviews__desc">
+                                            <p class="reviews__text">Этот парень проходил обучение веб-разработке не
+                                                где-то,
+                                                а в
+                                                LoftSchool! 4,5
+                                                месяца только самых тяжелых испытаний и бессонных ночей!</p>
+                                            <div class="reviews__user">
+                                                <div class="reviews__user-img reviews__user-img--1"></div>
+                                                <div class="reviews__user-desc">
+                                                    <div class="user-name">Ковальчук Дмитрий</div>
+                                                    <span>Основатель Loftschool</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="slider__item swiper-slide">
+                                <ul class="reviews__list">
+                                    <li class="reviews__item">
+                                        <div class="reviews__desc">
+                                            <p class="reviews__text">Этот код выдержит любые испытания. Только
+                                                пожалуйста,
+                                                не загружайте сайт на слишком старых браузерах</p>
+                                            <div class="reviews__user">
+                                                <div class="reviews__user-img reviews__user-img--2"></div>
+                                                <div class="reviews__user-desc">
+                                                    <div class="user-name">Владимир Сабанцев</div>
+                                                    <span>Преподаватель</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="swiper-pagination swiper-pagination-phones"></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -448,8 +543,8 @@
             <div class="container container-footer">
                 <div class="footer__copyright">
                     <span class="footer__copyright-year">© 2020</span>
-                    <span class="footer__copyright-name">Александр <br> Свиржевский</span>
-                    <span class="footer__copyright-text">Личный сайт <br> веб-разработчика</span>
+                    <span class="footer__copyright-name">Александр Свиржевский</span>
+                    <span class="footer__copyright-text">Личный сайт веб-разработчика</span>
                 </div>
                 <div class="footer__data">
                     <nav class="navigation-footer">
@@ -522,6 +617,7 @@
             </div>
         </footer>
     </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./js/vendors.min.js"></script>
     <script src="./js/script.min.js"></script>
 

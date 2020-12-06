@@ -32,6 +32,14 @@
             right: -70%;
             top: 0;
         }
+
+        @include phones() {
+            display: none;
+        }
+    }
+
+    @include phones() {
+        align-items: flex-start;
     }
 }
 
@@ -48,6 +56,11 @@
         align-items: center;
         text-align: center;
         max-width: rem(410px);
+    }
+
+    @include phones() {
+        align-items: flex-start;
+        text-align: initial;
     }
 }
 
@@ -86,6 +99,10 @@
     @include tablets() {
         margin-bottom: rem(21px);
     }
+
+    @include phones() {
+        margin-bottom: rem(10px);
+    }
 }
 
 .works__text {
@@ -95,6 +112,10 @@
 
     @include tablets() {
         margin-bottom: rem(29px);
+    }
+
+    @include phones() {
+        margin-bottom: rem(35px);
     }
 }
 

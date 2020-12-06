@@ -7,11 +7,28 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: rem(78px);
+
+    @include phones() {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: rem(55px);
+        text-align: center;
+    }
 }
 
 .slider__controls {
     padding-right: 20%;
     display: flex;
+
+    @include phones() {
+        padding-right: 0;
+    }
+}
+
+.section-tittle--reviews {
+    @include phones() {
+        margin-bottom: rem(20px);
+    }
 }
 
 .button-slider {
@@ -42,6 +59,21 @@
 
 .slider__list {
     padding-bottom: rem(194px);
+    min-width: 0;
+
+    @include phones() {
+        display: none;
+    }
+}
+
+
+.slider__list--phones {
+    display: none;
+
+    @include phones() {
+        display: flex;
+        padding-bottom: rem(58px);
+    }
 }
 
 .reviews__list {

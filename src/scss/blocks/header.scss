@@ -2,13 +2,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    // margin-top: rem(54px);
-    // position: fixed;
-    // width: 100%;
-    // top: 0;
-    // left: 0;
-    // z-index: 9999;
-    // transition: .3s linear;
 }
 
 .header-scroll {
@@ -73,7 +66,6 @@
         justify-content: flex-start;
         align-items: flex-start;
         padding: 235px 10px 10px 51px;
-        // align-items: flex-start;
     }
 }
 
@@ -110,6 +102,10 @@
     @include tablets() {
         margin-left: 32%;
         margin-right: 10%;
+    }
+
+    @include phones() {
+        display: none;
     }
 }
 
