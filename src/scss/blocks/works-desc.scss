@@ -6,6 +6,12 @@
     }
 }
 
+.works__desc-list {
+    display: flex;
+    flex: 1;
+    transition: .5s all;
+}
+
 .works__content {
     display: flex;
     justify-content: space-between;
@@ -43,13 +49,19 @@
     }
 }
 
+.slider-works {
+    max-width: rem(443px);
+    overflow: hidden;
+}
+
 .works__desc {
-    max-width: rem(333px);
+    // max-width: rem(333px);
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     z-index: 1000;
     padding-left: 20px;
+    flex: 0 0 100%;
 
     @include tablets() {
         padding-left: 0;
