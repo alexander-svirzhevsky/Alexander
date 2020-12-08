@@ -1,12 +1,9 @@
 (function () {
-    function Slider(selector) {
+    function Slider(selector, list_init) {
         const slider = document.querySelector(selector);
-        const list = document.querySelector(".works__desc-list");
+        const list = document.querySelector(list_init);
         const countSlide = list.children.length;
         const btn = document.querySelector(".works__controls");
-        console.log(countSlide);
-
-
         let currentSlide = 0;
 
         const handlers = {
@@ -32,20 +29,20 @@
             }
         }
 
-
         btn.addEventListener("click", (e) => {
             const target = e.target.closest("[data-direction]")
 
             if (!target === null) return;
 
             const direction = target.dataset.direction;
-
             handlers[direction]();
         })
 
-
+        this.next = handlers.next;
+        this.prev = handlers.prev;
+        this.swipeTo = handlers.swipeTo;
     }
 
-    new Slider("#slider-works");
-
+    const desc_slide = new Slider("#slider-works", ".works__desc-list");
+    const img_slide = new Slider("#img-slider", ".slider-preview__list");
 }());

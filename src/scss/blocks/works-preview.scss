@@ -1,0 +1,17 @@
+.slider-preview {
+    overflow: hidden;
+    width: rem(637px);
+    height: rem(360px);
+}
+
+.slider-preview__list {
+    display: flex;
+    flex: 1;
+    transition-duration: .8s;
+    transition-property: transform;
+    transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55)
+}
+
+.slider-preview__item {
+    flex: 0 0 100%;
+}

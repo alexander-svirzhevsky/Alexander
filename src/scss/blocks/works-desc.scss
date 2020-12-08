@@ -9,7 +9,9 @@
 .works__desc-list {
     display: flex;
     flex: 1;
-    transition: .5s all;
+    transition-duration: .8s;
+    transition-property: transform;
+    transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55)
 }
 
 .works__content {
