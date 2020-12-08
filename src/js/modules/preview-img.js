@@ -1,24 +1,36 @@
 (function () {
-    const btn = document.querySelector(".works__controls");
     const list = document.querySelectorAll(".works__item");
+    const wrap = document.querySelector(".works__controls");
+
+    let current = 0;
+    const length = list.length - 1;
 
 
-    btn.addEventListener("click", (e) => {
-        const target = e.target.closest("[data-direction]");
-        const direction = target.dataset.direction;
-        const active = document.querySelector(".active-preview");
+    wrap.addEventListener("click", (e) => {
 
-        for (let i = 0; i < list.length; i++) {
-            list[i].classList.remove("active-preview");
+        const { direction, index } = e.target.dataset;
 
-        }
-        if (direction === "next") {
-            active.nextElementSibling.classList.add("active-preview");
-        } else {
-            active.previousElementSibling.classList.add("active-preview");
+        if (!direction && !index) {
+            return false;
         }
 
+        list[current].classList.remove("active-preview");
+
+        if (direction) {
+            if (direction === "next") {
+                current = current + 1 > length ? 0 : current + 1;
+            }
+
+            if (direction === "prev") {
+                current = current - 1 < 0 ? length : current - 1;
+            }
+        }
+
+        if (index) {
+            current = +index;
+        }
+
+        list[current].classList.add("active-preview");
 
     })
 }());
-
