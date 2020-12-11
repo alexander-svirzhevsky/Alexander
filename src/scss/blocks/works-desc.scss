@@ -25,6 +25,10 @@
         align-items: center;
     }
 
+    @include phones() {
+        width: 100%;
+    }
+
     &::before {
         content: attr(data-slide);
         position: absolute;
@@ -54,10 +58,18 @@
 .slider-works {
     max-width: rem(443px);
     overflow: hidden;
+    width: 50%;
+
+    @include tablets() {
+        width: 74%;
+    }
+
+    @include phones() {
+        width: 100%;
+    }
 }
 
 .works__desc {
-    // max-width: rem(333px);
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -66,10 +78,8 @@
     flex: 0 0 100%;
 
     @include tablets() {
-        padding-left: 0;
         align-items: center;
         text-align: center;
-        max-width: rem(410px);
     }
 
     @include phones() {
@@ -136,13 +146,14 @@
 .more {
     display: flex;
     justify-content: center;
-    text-decoration: underline;
-    text-decoration-color: #586ED3;
-    fill: #586ED3;
-    color: #586ED3;
+    text-decoration-color: $darkBlue;
+    fill: $darkBlue;
+    color: $darkBlue;
 
     &:hover {
-        text-decoration: none;
+        text-decoration: underline;
+        color: #5500F2;
+        fill:#5500F2;
     }
 
     &__icon {

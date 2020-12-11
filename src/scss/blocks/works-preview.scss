@@ -1,7 +1,7 @@
 .slider-preview {
     overflow: hidden;
-    width: rem(637px);
-    height: rem(360px);
+    max-width: rem(637px);
+    max-height: rem(360px);
 }
 
 .slider-preview__list {

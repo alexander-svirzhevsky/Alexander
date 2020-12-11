@@ -6,9 +6,12 @@
 
 .works__preview {
     position: relative;
+    width: 58%;
+    height: 100%;
 
     @include tablets() {
         margin-bottom: rem(56px);
+        width: 100%;
     }
 }
 

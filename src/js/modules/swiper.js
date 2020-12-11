@@ -12,7 +12,8 @@
             dynamicBullets: true
         },
 
-        grabCursor: true,
+        // simulateTouch: true,
+        touchRatio: 0,
 
         keyboard: {
             enablded: true,
@@ -45,7 +46,7 @@
             dynamicBullets: true
         },
 
-        grabCursor: true,
+        touchRatio: 0,
 
         keyboard: {
             enablded: true,
