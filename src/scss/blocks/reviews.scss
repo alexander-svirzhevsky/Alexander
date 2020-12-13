@@ -118,8 +118,8 @@
     display: flex;
 
     &-img {
-        width: 75px;
-        height: 75px;
+        width: rem(75px);
+        height: rem(75px);
         border-radius: 50%;
         background-position: top 10% center;
         background-repeat: no-repeat;
@@ -132,6 +132,10 @@
         &--2 {
             background-image: url("../img/quote/2.png");
             background-position: top center;
+
+            @include tablets() {
+                margin-right: rem(10px);
+            }
         }
     }
 

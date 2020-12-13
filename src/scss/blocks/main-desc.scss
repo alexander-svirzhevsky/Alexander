@@ -1,0 +1,23 @@
+.loft {
+    width: rem(110px);
+    height: rem(25px);
+}
+
+.about__text {
+    p{
+        margin-bottom: rem(14px);
+    }
+}
+
+.about__extra span p{
+    margin-bottom: rem(14px);
+}
+
+.certificate {
+    text-decoration: underline;
+    color: rgb(105, 158, 228);
+
+    &:hover {
+        text-decoration: none;
+    }
+}
