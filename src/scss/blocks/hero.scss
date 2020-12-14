@@ -8,6 +8,10 @@
     flex-direction: column;
     justify-content: space-between;
     margin-bottom: rem(175px);
+
+    @include phones() {
+        height: 90vh;
+    }
 }
 
 .main-content {

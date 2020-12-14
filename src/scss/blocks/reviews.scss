@@ -125,6 +125,11 @@
         background-repeat: no-repeat;
         margin-right: rem(31px);
 
+
+        @include tablets() {
+            margin-right: rem(10px);
+        }
+
         &--1 {
             background-image: url("../img/quote/1.png");
         }
@@ -133,9 +138,16 @@
             background-image: url("../img/quote/2.png");
             background-position: top center;
 
-            @include tablets() {
-                margin-right: rem(10px);
-            }
+        }
+
+        &--3 {
+            background-image: url("../../img/quote/3.jpg");
+            background-size: cover;
+        }
+
+        &--4 {
+            background-image: url("../img/quote/4.png");
+            background-size: cover;
         }
     }
 

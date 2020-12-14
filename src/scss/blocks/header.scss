@@ -38,10 +38,10 @@
         position: fixed;
         top: 0;
         right: 0;
-        width: 45vw;
+        width: 55vw;
         height: 100%;
-        background-color: #252830;
-        color: #fff;
+        background-color: #fff;
+        color: #464E62;
         z-index: 9000;
         transform: translateX(100%);
         transition: .5s all;
@@ -50,6 +50,10 @@
         &--active {
             transform: translateX(0%);
         }
+    }
+
+    @include phones() {
+        width: 65vw;
     }
 }
 
@@ -61,11 +65,11 @@
 
     @include tablets() {
         width: 100%;
-        height: 100%;
+        height: 80%;
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
-        padding: 235px 10px 10px 51px;
+        padding: rem(235px) rem(10px) rem(40px) rem(40px);
     }
 }
 
@@ -115,6 +119,10 @@
     justify-content: center;
     align-items: center;
 
+    @include tablets() {
+        justify-content: flex-start;
+        padding-left: rem(40px);
+    }
 }
 
 .socials__item {

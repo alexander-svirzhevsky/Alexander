@@ -176,4 +176,36 @@
         stroke-width: rem(12px);
         stroke-dashoffset: rem(200px);
     }
+
+    &--html {
+        stroke-dashoffset: rem(40px);
+    }
+
+    &--css {
+        stroke-dashoffset: rem(80px);
+    }
+
+    &--js {
+        stroke-dashoffset: rem(110px);
+    }
+
+    &--jquery {
+        stroke-dashoffset: rem(180px);
+    }
+
+    &--git {
+        stroke-dashoffset: rem(100px);
+    }
+
+    &--terminal {
+        stroke-dashoffset: rem(170px);
+    }
+
+    &--gulp {
+        stroke-dashoffset: rem(75px);
+    }
+
+    &--webpack {
+        stroke-dashoffset: rem(210px);
+    }
 }

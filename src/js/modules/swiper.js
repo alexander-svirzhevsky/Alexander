@@ -6,22 +6,11 @@
             prevEl: '.button-slider--prev'
         },
 
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-            dynamicBullets: true
-        },
-
-        // simulateTouch: true,
-        touchRatio: 0,
-
         keyboard: {
             enablded: true,
             onlyInViewport: true
         },
 
-        // autoHeight: true,
-        // loop: true,
         speed: 800,
         effect: 'flip',
 
@@ -53,8 +42,6 @@
             onlyInViewport: true
         },
 
-        // autoHeight: true,
-        // loop: true,
         speed: 800,
         effect: 'flip',
 

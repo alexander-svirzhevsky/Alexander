@@ -70,3 +70,13 @@
         }
     }
 }
+
+.socials-burger {
+    display: none;
+    width: 100%;
+    height: 100%;
+
+    @include tablets() {
+        display: block;
+    }
+}
