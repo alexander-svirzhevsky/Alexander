@@ -25,22 +25,22 @@
                             <nav class="navigation">
                                 <ul class="navigation__list">
                                     <li class="navigation__item">
-                                        <a href="#" class="navigation__link">
+                                        <a href="#about" class="navigation__link js-scroll">
                                             Обо мне
                                         </a>
                                     </li>
                                     <li class="navigation__item">
-                                        <a href="#" class="navigation__link">
+                                        <a href="#skills" class="navigation__link js-scroll">
                                             Навыки
                                         </a>
                                     </li>
                                     <li class="navigation__item">
-                                        <a href="#" class="navigation__link">
+                                        <a href="#works" class="navigation__link js-scroll">
                                             Работы
                                         </a>
                                     </li>
                                     <li class="navigation__item">
-                                        <a href="#" class="navigation__link">
+                                        <a href="#reviews" class="navigation__link js-scroll">
                                             Отзывы
                                         </a>
                                     </li>
@@ -48,28 +48,31 @@
                                 <div class="socials-burger">
                                     <ul class="socials__list">
                                         <li class="socials__item">
-                                            <a href="#" class="socials__link">
+                                            <a href="https://www.instagram.com/alexander.svirzhevsky/"
+                                                class="socials__link" target="_blank">
                                                 <svg class="socials__icon">
                                                     <use xlink:href="img/sprite.svg#insta"></use>
                                                 </svg>
                                             </a>
                                         </li>
                                         <li class="socials__item">
-                                            <a href="#" class="socials__link">
+                                            <a href="https://github.com/alexander-svirzhevsky" target="_blank"
+                                                class="socials__link">
                                                 <svg class="socials__icon">
                                                     <use xlink:href="img/sprite.svg#github"></use>
                                                 </svg>
                                             </a>
                                         </li>
                                         <li class="socials__item">
-                                            <a href="#" class="socials__link">
+                                            <a href="https://vk.com/sanchesvirjevski" class="socials__link"
+                                                target="_blank">
                                                 <svg class="socials__icon">
                                                     <use xlink:href="img/sprite.svg#vk"></use>
                                                 </svg>
                                             </a>
                                         </li>
                                         <li class="socials__item">
-                                            <a href="#" class="socials__link">
+                                            <a href="#popup" class="socials__link">
                                                 <svg class="socials__icon">
                                                     <use xlink:href="img/sprite.svg#mail"></use>
                                                 </svg>
@@ -85,28 +88,30 @@
                             <div class="socials">
                                 <ul class="socials__list">
                                     <li class="socials__item">
-                                        <a href="#" class="socials__link">
+                                        <a href="https://www.instagram.com/alexander.svirzhevsky/" class="socials__link"
+                                            target="_blank">
                                             <svg class="socials__icon">
                                                 <use xlink:href="img/sprite.svg#insta"></use>
                                             </svg>
                                         </a>
                                     </li>
                                     <li class="socials__item">
-                                        <a href="#" class="socials__link">
+                                        <a href="https://github.com/alexander-svirzhevsky" target="_blank"
+                                            class="socials__link">
                                             <svg class="socials__icon">
                                                 <use xlink:href="img/sprite.svg#github"></use>
                                             </svg>
                                         </a>
                                     </li>
                                     <li class="socials__item">
-                                        <a href="#" class="socials__link">
+                                        <a href="https://vk.com/sanchesvirjevski" class="socials__link" target="_blank">
                                             <svg class="socials__icon">
                                                 <use xlink:href="img/sprite.svg#vk"></use>
                                             </svg>
                                         </a>
                                     </li>
                                     <li class="socials__item">
-                                        <a href="#" class="socials__link">
+                                        <a href="#popup" class="socials__link popup-link">
                                             <svg class="socials__icon">
                                                 <use xlink:href="img/sprite.svg#mail"></use>
                                             </svg>
@@ -137,7 +142,7 @@
                     </div>
                 </div>
             </section>
-            <section class="about">
+            <section class="about" id="about">
                 <div class="container container__about">
                     <div class="about__user">
                         <div class="user-img">
@@ -217,7 +222,7 @@
                     <polygon points="0,100 1000,100 1000,0"></polygon>
                 </svg>
             </div>
-            <section class="skills">
+            <section class="skills" id="skills">
                 <div class="container container-skills">
                     <div class="skills__title">Чем я могу быть полезен вам</div>
                     <div class="skills__text">Этот сайт я сделал в рамках обучения в Школе онлайн образования
@@ -393,7 +398,7 @@
 
                 </div>
             </section>
-            <setion class="works">
+            <setion class="works" id="works">
                 <div class="container container-works">
                     <h3 class="section-tittle">Мои работы</h3>
                     <div class="works__content" data-slide="1">
@@ -538,7 +543,7 @@
                 </svg>
             </div>
         </div>
-        <div class="section-reviews">
+        <div class="section-reviews" id="reviews">
             <div class="container ">
                 <div class="slider">
                     <div class="slider__header">
@@ -784,6 +789,17 @@
                 </div>
             </div>
         </footer>
+        <div class="popup" id="popup">
+            <div class="popup__body">
+                <div class="popup__content">
+                    <a href="#" class="popup__close close-popup">x</a>
+                    <div class="popup__title">Для связи по почте:</div>
+                    <div class="popup__text">
+                        sasbrest@mail.ru / alex-ander.1@mail.ru
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./js/vendors.min.js"></script>
