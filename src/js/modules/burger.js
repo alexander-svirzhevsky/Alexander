@@ -2,7 +2,6 @@
     const burger = document.querySelector(".burger");
     const menu = document.querySelector(".navigation");
     const close = document.querySelector(".navigation__close");
-    const link = document.querySelector(".navigation__link")
 
     burger.addEventListener('click', () => {
         menu.classList.add("navigation--active")
@@ -16,4 +15,4 @@
         menu.classList.remove("navigation--active")
     })
 
-}())
+}());

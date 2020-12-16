@@ -17,11 +17,10 @@
     <div class="wrapper">
         <div class="section-welcome">
             <section class="hero">
-
                 <div class="container container__hero">
                     <header class="header">
                         <div class="container-header">
-                            <a href="#" class="header__user">АС</a>
+                            <a href="#!" class="header__user">АС</a>
                             <nav class="navigation">
                                 <ul class="navigation__list">
                                     <li class="navigation__item">
@@ -72,7 +71,7 @@
                                             </a>
                                         </li>
                                         <li class="socials__item">
-                                            <a href="#popup" class="socials__link">
+                                            <a href="#popup" class="socials__link popup-link">
                                                 <svg class="socials__icon">
                                                     <use xlink:href="img/sprite.svg#mail"></use>
                                                 </svg>
@@ -191,14 +190,14 @@
                                 <p>Учеба: БрГУ им. А.С.Пушкина (2011-2015) → Институт повышения квалификации(2014-2015)
                                     →
                                     Курсы таможенного декларанта г.Минск (2017) → LoftSchool (2020) / "Веб-разработка
-                                    для начинающих" оценка А (<a class="certificate" target="_blank"
-                                        href="https://loftschool.com/diploma/NW1589363511/ru/pdf">сертификат
+                                    для начинающих" оценка А (<a class="certificate popup-link"
+                                        href="#certificate">сертификат
                                         <span>
                                             <img src="img/preview/Сертификат.png" alt="">
                                         </span>
                                     </a>),
-                                    "JavaScript" оценка А+ (<a class="certificate" target="_blank"
-                                        href="https://loftschool.com/diploma/ST1600859096/ru/pdf">сертификат
+                                    "JavaScript" оценка А+ (<a class="certificate popup-link"
+                                        href="#certificate-2">сертификат
                                         <span>
                                             <img src="img/preview/Сертификат2.png" alt="">
                                         </span>
@@ -465,7 +464,8 @@
                                         страницу. На карте можно выбирать объекты и оставлять отзывы о них.
                                         <br> Отзывы поблизости группируются в одну метку, при нажатии на сгруппированный
                                         объект открывается карусель отзывов.</span>
-                                    <a href="#" class="more">
+                                    <a href="https://github.com/alexander-svirzhevsky/Ymaps_geo_review" target="_blank"
+                                        class="more">
                                         <svg class="more__icon">
                                             <use xlink:href="img/sprite.svg#showAll"></use>
                                         </svg>
@@ -723,22 +723,22 @@
                     <nav class="navigation-footer">
                         <ul class="navigation__list-footer">
                             <li class="navigation__item-footer">
-                                <a href="#" class="navigation__link-footer">
+                                <a href="#about" class="navigation__link-footer js-scroll">
                                     Обо мне
                                 </a>
                             </li>
                             <li class="navigation__item-footer">
-                                <a href="#" class="navigation__link-footer">
+                                <a href="#skills" class="navigation__link-footer js-scroll">
                                     Навыки
                                 </a>
                             </li>
                             <li class="navigation__item-footer">
-                                <a href="#" class="navigation__link-footer">
+                                <a href="#works" class="navigation__link-footer js-scroll">
                                     Работы
                                 </a>
                             </li>
                             <li class="navigation__item-footer">
-                                <a href="#" class="navigation__link-footer">
+                                <a href="#reviews" class="navigation__link-footer js-scroll">
                                     Отзывы
                                 </a>
                             </li>
@@ -750,28 +750,31 @@
                                 Loftschool</p>
                             <ul class="footer__socials">
                                 <li class="footer__socials-item">
-                                    <a href="#" class="footer__socials-link">
+                                    <a href="https://www.instagram.com/alexander.svirzhevsky/" target="_blank"
+                                        class="footer__socials-link">
                                         <svg class="footer__socials-icon">
                                             <use xlink:href="img/sprite.svg#insta"></use>
                                         </svg>
                                     </a>
                                 </li>
                                 <li class="footer__socials-item">
-                                    <a href="#" class="footer__socials-link">
+                                    <a href="https://vk.com/sanchesvirjevski" class="footer__socials-link"
+                                        target="_blank">
                                         <svg class="footer__socials-icon">
                                             <use xlink:href="img/sprite.svg#vk"></use>
                                         </svg>
                                     </a>
                                 </li>
                                 <li class="footer__socials-item">
-                                    <a href="#" class="footer__socials-link">
+                                    <a href="https://github.com/alexander-svirzhevsky" class="footer__socials-link"
+                                        target="_blank">
                                         <svg class="footer__socials-icon">
                                             <use xlink:href="img/sprite.svg#github"></use>
                                         </svg>
                                     </a>
                                 </li>
                                 <li class="footer__socials-item">
-                                    <a href="#" class="footer__socials-link">
+                                    <a href="#popup" class="footer__socials-link popup-link">
                                         <svg class="footer__socials-icon">
                                             <use xlink:href="img/sprite.svg#mail"></use>
                                         </svg>
@@ -797,6 +800,22 @@
                     <div class="popup__text">
                         sasbrest@mail.ru / alex-ander.1@mail.ru
                     </div>
+                </div>
+            </div>
+        </div>
+        <div class="popup" id="certificate">
+            <div class="popup__body">
+                <div class="popup__content popup__content--certificate">
+                    <a href="#" class="popup__close close-popup">x</a>
+                    <img src="img/preview/Сертификат.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="popup" id="certificate-2">
+            <div class="popup__body">
+                <div class="popup__content popup__content--certificate">
+                    <a href="#" class="popup__close close-popup">x</a>
+                    <img src="img/preview/Сертификат2.png" alt="">
                 </div>
             </div>
         </div>
