@@ -49,6 +49,10 @@
     position: absolute;
     top: rem(10px);
     right: rem(10px);
+
+    &--white {
+        color: #fff;
+    }
 }
 
 .popup__title {

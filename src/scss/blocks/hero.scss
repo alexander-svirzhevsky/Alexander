@@ -8,6 +8,10 @@
     flex-direction: column;
     justify-content: space-between;
     margin-bottom: rem(175px);
+
+    @include phones() {
+        margin-bottom: rem(100px);
+    }
 }
 
 .main-content {
@@ -66,7 +70,7 @@
     }
 
     @include phones() {
-        margin-bottom: rem(50px);
+        margin-bottom: rem(85px);
     }
 }
 
