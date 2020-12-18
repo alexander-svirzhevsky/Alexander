@@ -147,13 +147,13 @@
     display: flex;
     justify-content: center;
     text-decoration-color: $darkBlue;
-    fill: $darkBlue;
-    color: $darkBlue;
+    fill: #586ED3;
+    color: #586ED3;
 
     &:hover {
         text-decoration: underline;
-        color: #5500F2;
-        fill:#5500F2;
+        // color: #5500F2;
+        // fill:#5500F2;
     }
 
     &__icon {
